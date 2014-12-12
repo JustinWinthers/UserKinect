@@ -1,0 +1,61 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400);
+@import url({path}/css/style-prefixed.css);
+</style>
+
+<div data-html2canvas-ignore class="jiraModal collapse jiraCssTransitions"></div>
+<div class="jiraCanvas"></div>
+<div class="palette-overlay jiraCssTransitions"></div>
+<div data-html2canvas-ignore class="jiraContainer collapse jiraCssTransitions">
+    <button class="jiraConnectExpandButton" onclick="jiraConnect.toggleCollapse()">Feedback?</button>
+    <button class="jiraConnectDrawButton draw" onclick="jiraConnect.showCanvas(event)">&nbsp;Draw</button>
+    <div class="palette-case jiraCssTransitions">
+
+        <div class="palette-box">
+            <div class="palette eraser" onclick="jiraConnect.selectColor(this, 'eraser')"></div>
+        </div>
+        <div class="palette-box">
+            <div class="palette red-pen" onclick="jiraConnect.selectColor(this, 'red-pen')"></div>
+        </div>
+        <div class="palette-box">
+            <div class="palette highlighter" onclick="jiraConnect.selectColor(this, 'highlighter')"></div>
+        </div>
+        <div class="palette-box">
+            <div class="palette black-pen" onclick="jiraConnect.selectColor(this, 'black-pen')"></div>
+        </div>
+        <div class="palette-box">
+            <div class="palette undo" onclick="jiraConnect.undo()"></div>
+        </div>
+        <div class="palette-box">
+            <div class="palette redo" onclick="jiraConnect.redo()"></div>
+        </div>
+
+
+    </div>
+
+    <div class="jiraUipanel">
+        <img class="jiraUserAvatar" />
+        <h2 class="jiraTitle"></h2>
+        <span class="jiraUserName">Welcome to JiraConnect&nbsp;&copy;</span>
+        <hr class="jiraHR">
+        <form class="jiraConnectForm">
+            <input class="jiraUser" placeholder="User Id" name="username" maxlength="5">
+            <input class="jiraUserPassword" placeholder="Jira Password" name="password" type="password">
+            <div class="fullmode">
+                <select class="input jiraProject" name="project" onchange="jiraConnect.updateProject(this)"></select>
+                <select class="input jiraComponent" name="component" onchange="jiraConnect.updateComponent(this)"></select>
+                <select class="input jiraIssueType" name="issuetype" onchange="jiraConnect.updateIssueType(this)"></select>
+            </div>
+            <input class="jiraSummary" placeholder="Summary" name="summary">
+            <textarea class="jiraDescription" placeholder="What is your feedback?" name="description"></textarea>
+        </form>
+        <button class="jiraConnectSendButton" onclick="jiraConnect.sendForm()">Send</button>
+        <div class="jiraConnectMessage jiraCssTransitions"></div>
+    </div>
+    <img class="jiraConnectLogo" onclick="jiraConnect.showAdminPanel()" />
+    <div class="jiraAdminPanel display-none">
+        <input class="jiraAdminInput" name="admin" type="password" placeholder="Admin Password" />
+        <button class="jiraBtn" onclick="jiraConnect.unlockAdmin()">Unlock</button>
+    </div>
+
+</div>

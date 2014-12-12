@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <style>
+        pre.error{
+            height: 20px;
+            width: 60%;
+        }
+
+        #mocha .test textarea.error {
+            color: #c00;
+            max-height: 300px;
+            overflow: auto;
+            height: 20px;
+            width: 60%;
+        }
+
+        #mocha .test textarea {
+            display: block;
+            float: left;
+            clear: left;
+            font: 12px/1.5 monaco, monospace;
+            margin: 5px;
+            padding: 15px;
+            border: 1px solid #eee;
+            max-width: 85%;
+            max-width: calc(100% - 42px);
+            word-wrap: break-word;
+            border-bottom-color: #ddd;
+            -webkit-border-radius: 3px;
+            -webkit-box-shadow: 0 1px 3px #eee;
+            -moz-border-radius: 3px;
+            -moz-box-shadow: 0 1px 3px #eee;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="mocha"></div>
+<!--<script src="http://localhost:8888/jiraConnect.js?project=RSP&env=TEST&issuetype=Defect&component=Test_CUT"></script>-->
+<script src="http://vavt-rns-web41:7777/jiraConnect.js?project=RSP&env=TEST&issuetype=Defect&component=Test_CUT"></script>
+<script src="../node_modules/mocha/mocha.js" type="text/javascript"></script>
+<script src="../node_modules/chai/chai.js" type="text/javascript"></script>
+<script>
+
+    mocha.setup('bdd');
+
+</script>
+
+<script>
+
+    var assert = chai.assert,
+            expect = chai.expect,
+            should = chai.should(); // Note that should has to be executed
+
+    describe('JiraConnect Private Methods', function() {
+
+        describe('method [\'private\'] ', function() {
+
+            it('should exist on the JiraConnect window object for testing private methods', function() {
+                expect( jiraConnect.hasOwnProperty('private') ).to.equal(true);
+            });
+        });
+
+        describe('jiraConnect.private.addClass()', function() {
+
+            it('should be of type function', function() {
+                expect( typeof jiraConnect.private.addClass ).to.equal('function');
+            });
+        });
+
+        describe('jiraConnect.private.removeClass()', function() {
+
+            it('should be of type function', function() {
+                expect( typeof jiraConnect.private.removeClass ).to.equal('function');
+            });
+        });
+
+        describe('jiraConnect.private.toggleClass()', function() {
+
+            it('should be of type function', function() {
+                expect( typeof jiraConnect.private.toggleClass ).to.equal('function');
+            });
+        });
+
+        describe('jiraConnect.private.toggleHTML()', function() {
+
+            it('should be of type function', function() {
+                expect( typeof jiraConnect.private.toggleHTML ).to.equal('function');
+            });
+        });
+
+        describe('jiraConnect.private.clearForm()', function() {
+
+            it('should be of type function', function() {
+                expect( typeof jiraConnect.private.clearForm ).to.equal('function');
+            });
+        });
+
+    });
+
+</script>
+
+<script>
+
+    document.querySelector('#mocha').addEventListener("DOMNodeInserted", function (ev) {
+        //do nothing
+    }, false);
+
+    var runner = mocha.run();
+
+    /**
+     *  These are all the events you can subscribe to:
+     *   - `start`  execution started
+     *   - `end`  execution complete
+     *   - `suite`  (suite) test suite execution started
+     *   - `suite end`  (suite) all tests (and sub-suites) have finished
+     *   - `test`  (test) test execution started
+     *   - `test end`  (test) test completed
+     *   - `hook`  (hook) hook execution started
+     *   - `hook end`  (hook) hook complete
+     *   - `pass`  (test) test passed
+     *   - `fail`  (test, err) test failed
+     */
+
+    runner.on("end", convertErrors);
+    function convertErrors(){
+
+        // convert the display output to be more manageable
+        // replace <pre> with <text area> for errors
+        var errors = document.querySelectorAll('pre.error');
+
+        Array.prototype.forEach.call(errors,function(el){
+
+            var parent = el.parentNode;
+            var newEl = document.createElement("textarea");
+
+            parent.removeChild(el);
+            newEl.innerHTML = el.innerHTML;
+            newEl.className ="error";
+            parent.appendChild(newEl);
+        })
+    }
+</script>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

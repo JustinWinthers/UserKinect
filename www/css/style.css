@@ -1,0 +1,466 @@
+#jiraConnect .jiraModal {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-sizing:border-box;
+    z-index:9998;
+    transition: all 1s linear;
+}
+
+#jiraConnect .collapseModal {
+    position: fixed;
+    top:0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#jiraConnect .jiraCanvas {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    box-sizing:border-box;
+    z-index:9998
+}
+
+#jiraConnect #jiraConnectCanvas{
+    cursor:crosshair;
+}
+
+#jiraConnect .jiraUipanel{
+    position: relative;
+    padding-bottom: 5px;
+    top: 10px;
+    background-color: snow;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#jiraConnect .jiraCanvasShow {
+    opacity: 1;
+}
+
+
+#jiraConnect .jiraContainer {
+    width: 380px;
+    height: 620px;
+    padding-bottom: 15px;
+    border-radius: 2px;
+    background-color: #e9e9e9;
+    box-sizing: border-box;
+    position: fixed;
+    left: calc((100% - 400px)/2);
+    top: 30px;
+    -webkit-font-smoothing: auto;
+    text-rendering: optimizelegibility;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+}
+
+#jiraConnect .jiraContainer.expand {
+    height: 775px;
+}
+
+#jiraConnect button {
+    background-color: #267ecf;
+    background-image: -webkit-linear-gradient(top, #267ecf, #2b6fc5);
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#jiraConnect .jiraConnectExpandButton {
+    display: block;
+    height: 40px;
+    width: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+#jiraConnect .jiraConnectDrawButton {
+    display: block;
+    height: 40px;
+    width: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+    float: left;
+    background-image: none;
+}
+
+#jiraConnect .jiraConnectSendButton{
+    display: block;
+    height: 40px;
+    width: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+}
+
+#jiraConnect .draw{
+    background-position: -4px 2px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+}
+
+#jiraConnect .clear-bgimage{
+    background-image: none !important;
+}
+
+#jiraConnect .jiraUserAvatar{
+    position: absolute;
+    -webkit-user-select: none;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid gray;
+    top: 24px;
+    width: 48px;
+    height: 48px;
+    left: 5%;
+}
+
+#jiraConnect .jiraTitle{
+    display: block;
+    top: 20px;
+    position: absolute;
+    text-align: left;
+    color: rgb(61, 61, 61);
+    font-weight: 100;
+    letter-spacing: -1px;
+    font-size: 30px;
+    margin: 0 0 0 5px;
+    line-height: 40px;
+    left: 75px;
+    clear: both;
+
+}
+
+#jiraConnect .jiraUserName{
+    display: block;
+    top: 20px;
+    position: relative;
+    text-align: left;
+    color: rgb(61, 61, 61);
+    font-weight: 100;
+    letter-spacing: -1px;
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    line-height: 40px;
+    left: 75px;
+    clear: both;
+
+}
+
+#jiraConnect .jiraHR{
+    top: 14px;
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid rgb(41, 128, 185);
+    opacity: 0.5;
+}
+
+#jiraConnect .jiraUser{
+    display: block;
+    height: 40px;
+    width:35%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 20px auto 15px 0;
+    float: left;
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect .jiraUserPassword{
+    width: 60%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    display: block;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect .jiraConnectForm{
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+#jiraConnect .jiraSummary{
+    display: block;
+    height: 40px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 15px auto;
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect .input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 15px auto;
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect .jiraDescription{
+    position: relative;
+    display: block;
+    height: 180px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 15px auto;
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect  .jiraConnectMessage{
+    display: block;
+    height: auto;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;
+    border: none;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 15px auto;
+    transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    background-color: rgb(227, 227, 227);
+}
+
+#jiraConnect .jiraCssTransitions{
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+}
+
+#jiraConnect .jiraModal.collapse,
+#jiraConnect .jiraContainer.collapse{
+    position:fixed;
+    height: 40px !important;
+    min-height: 40px !important;
+    width: 80px !important;
+    top: calc(100% - 45px);
+    left: calc(100% - 85px);
+    transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    overflow-x:hidden;
+    overflow-y:hidden
+}
+
+#jiraConnect .collapseToDraw {
+    position: fixed;
+    top:5px;
+    margin:0 auto;
+    height: 45px !important;
+    overflow: hidden;
+    background-color: transparent;
+    width:445px;
+}
+
+#jiraConnect .shadow{
+    -webkit-box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.15);
+    -ms-box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.15);
+    -o-box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.15);
+}
+
+#jiraConnect .display{
+    opacity: 1 !important;
+}
+
+#jiraConnect .display-block{
+    display: block !important;
+}
+
+#jiraConnect .display-none{
+    display: none !important;
+}
+
+.palette-case {
+    position: relative;
+    top: 0;
+    opacity: 0;
+    padding-left: 2px;
+    width:auto;
+    height: 45px;
+    text-align:center;
+    overflow: hidden;
+}
+
+#jiraConnect .palette-overlay{
+    position: fixed;
+    display: none;
+    opacity: 0;
+    top:0px;
+    left:calc(50% - 205px);
+    width: 423px;
+    height: 50px;
+    background-color: rgba(177, 182, 183, 0.88);
+    border: 1px solid rgb(153, 157, 158);
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 9997;
+}
+
+.palette-box {
+    float:left;
+    padding-right: 2px;
+}
+
+.palette {
+    border:3px solid #979797;
+    height:34px;
+    width:34px;
+    border-radius: 7px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#jiraConnect .palette.red-pen{
+    background-color: rgb(255, 227, 225);
+    color: #980000;
+}
+
+#jiraConnect .palette.black-pen{
+    background-color: rgb(230, 230, 230);
+    color: #000000;
+}
+
+#jiraConnect .palette.eraser{
+    background-color: #ffffff;
+}
+
+#jiraConnect .palette.undo{
+    background-color: #ffffff;
+}
+
+#jiraConnect .palette.redo{
+    background-color: #ffffff;
+}
+
+#jiraConnect .palette.undo:active,
+#jiraConnect .palette.redo:active{
+    border-color: rgba(0, 17, 44, 0.36) !important;
+    box-shadow: 0 2px 6px rgba(0, 55, 110, 0.52) !important;
+}
+
+
+#jiraConnect .palette.highlighter{
+    background-color: rgb(255, 248, 224);
+    color: #cfcf00;
+}
+
+#jiraConnect .jiraConnectLogo{
+    position: absolute;
+    display: none;
+    opacity: .9;
+    bottom: 5px;
+    right: 5%;
+    width: 68px;
+    z-index: -1;
+}
+
+#jiraConnect .jiraAdminPanel{
+    position: absolute;
+    width: 90%;
+    left:10%;
+    bottom: 10px;
+    z-index: -1;
+}
+
+#jiraConnect .jiraAdminInput{
+    position: relative;
+    width: 40%;
+    height: 28px;
+    border: none;
+    padding: 0 10px;
+    float: left;
+}
+
+#jiraConnect .jiraBtn{
+    position: relative;
+    width: 65px;
+    height: 28px;
+    color: white;
+    margin-left: 5px;
+}
+
