@@ -1,13 +1,14 @@
 module.exports = (function(){
 
     return {
-        protocol:"http",
+        protocol:"https",
         env: 'test',
-        host:'jira.[yourjiraorghere].org',
+        host:'digitaladvisors.atlassian.net',
         port:'80',
-        user:'username',
-        password:'password',
+        ssl: '443',
+        user:'guest',
+        password:'guest',
         apiVersion: 'latest',
-        minify: true
+        minify: false
     };
 })();

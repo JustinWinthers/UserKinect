@@ -4,7 +4,7 @@ module.exports = function (app){
 
 
     // get the jiraConnect client side library
-    app.get('/jiraConnect.js', require('../services/getUserKinect'));
+    app.get('/userKinect.js', require('../services/getUserKinect'));
 
     // get the template for the jiraConnect UI - called client side
     app.get('/tmpl/:template', require('../services/getTemplate'));

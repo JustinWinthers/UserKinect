@@ -20,20 +20,23 @@ module.exports = function(req,res){
 
     config.env = req.body.env;
 
-    var jira = new JiraApi(config.protocol, config.env + config.host, config.port, config.user, config.password, config.apiVersion);
+    var jira = new JiraApi(config.protocol, config.env + config.host, ( config.protocol==='https') ? config.ssl : config.port, config.user, config.password, config.apiVersion);
 
     jira.addNewIssue( issue, function(error, data){
 
         if (error){
             console.log ("error: ", error);
             res.status(500).send(error);
+
+            return false;
         }
 
         request.post({
                 url:config.protocol + '://' + config.env + config.host + '/rest/api/2/issue/' + data.key + '/attachments',
                 auth:{
-                    user:'jew1',
-                    pass:'Logan1000'},
+                    user:config.user,
+                    pass:config.password
+                },
                 headers: {
                     'X-Atlassian-Token': 'nocheck'
                 },
@@ -52,17 +55,17 @@ module.exports = function(req,res){
                 if (err) {
                     console.log ('Jira error create new issue: ', err);
                     res.status(500).send(err);
-                    return null;
+                    return false;
                 }
 
                 if (httpResponse.statusCode === 401) {
                     res.status(401).send('JiraConnect error: 401 unauthorized');
-                    return null;
+                    return false;
                 }
 
                 res.status(200).send(data);
 
-                return null;
+                return false;
 
             });
 

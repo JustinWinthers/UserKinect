@@ -8,7 +8,7 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
 
     "use strict";
 
-    console.log ('jiraConnect v2.0');
+    console.log ('userKinect v1.5');
 
 
     function factory(elem, selector){
@@ -38,9 +38,9 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
     var issueType = '{issueType}';
     var component = '{component}';
     var baseURL = '{host}';
-    var protocol = 'http';
+    var protocol = 'https';
     var jira_env = '{jira_env}';
-    var jiraURL = 'jira.nreca.org/browse/';
+    var jiraURL = '{jira_host}/browse/';
     var collapsed = true;
     var canvasWasUpdated = false;
     var canvasShown = false;
@@ -378,7 +378,7 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
         jiraUserPassword.ignore=true;
 
 
-        jiraUser.maxLength = 5;
+        //jiraUser.maxLength = 5;
         jiraUser.onkeyup = getUserName;
         jiraUser.onblur = setUserName;
         jiraUser.ignore = true;
@@ -570,7 +570,7 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
         console.log (jiraUser.value);
 
         if (!jiraUser.value) {
-            jiraUserName.innerHTML = 'Welcome to JiraConnect&nbsp;&copy;';
+            jiraUserName.innerHTML = 'Welcome to userKinect&nbsp;&copy;';
             jiraUserAvatar.src = baseURL + "/images/avatar.png";
             return false;
         }
@@ -583,7 +583,7 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
                     jiraUserInfo = JSON.parse(data);
                     jiraUserPassword.value = '';
                     if (jiraUserInfo.avatarUrl) jiraUserInfo.avatarUrl = jiraUserInfo.avatarUrl.replace('testjira','jira');
-                    jiraUserName.innerHTML = jiraUserInfo.displayName ? jiraUserInfo.displayName : 'Welcome to JiraConnect&nbsp;&copy;';
+                    jiraUserName.innerHTML = jiraUserInfo.displayName ? jiraUserInfo.displayName : 'Welcome to userKinect&nbsp;&copy;';
                     loadAvatar();
                 }
             });

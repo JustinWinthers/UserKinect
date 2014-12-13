@@ -14,6 +14,7 @@ module.exports = function (req, res){
         data = data.toString().replace(/{mode}/g, req.query.mode || 'limited');
 
         data = data.replace(/{host}/g, req.protocol + '://' + req.get('host') );
+        data = data.replace(/{jira_host}/g, config.host);
 
         if (typeof req.query.env==='string') {
             if (req.query.env.toUpperCase() === 'PROD') {
