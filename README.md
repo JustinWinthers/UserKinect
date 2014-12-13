@@ -14,4 +14,4 @@ developers will join the project and help add more features and integrations wit
 tools to UserKinect.  UserKinect is written in pure JavaScript with an API layer written in NodeJS.
 
 
-<img src="/screenshots/shot8.png" style="width:70%">
+<img src="/screenshots/shot8.png" style="width:20px">
