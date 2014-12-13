@@ -6,8 +6,8 @@ module.exports = (function(){
         host:'digitaladvisors.atlassian.net',
         port:'80',
         ssl: '443',
-        user:'guest',
-        password:'guest',
+        user:'jwinthers',
+        password:'winthers01',
         apiVersion: 'latest',
         minify: false
     };
