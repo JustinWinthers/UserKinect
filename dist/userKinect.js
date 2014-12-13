@@ -369,7 +369,7 @@ var jiraConnect = window.jiraConnect = (function (document, window, helpers){
 
         jiraConnectLogo.src = baseURL + '/images/logo.png';
 
-        jiraUserAvatar.src = jiraUserInfo.avatarUrl || baseURL + "/avatar.png";
+        jiraUserAvatar.src = jiraUserInfo.avatarUrl || baseURL + "/images/avatar.png";
 
 
         jiraConnectProject.ignore=true;
