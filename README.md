@@ -14,6 +14,23 @@ developers will join the project and help add more features and integrations wit
 tools to UserKinect.  UserKinect is written in pure JavaScript with an API layer written in NodeJS.
 
 
+Simply embed it in your project like so:
+
+```html
+<script src="http://www.userkinect.com/userKinect.js?project=yourJiraProject&component=someJiraComponent&env=PROD&issuetype=yourIssueType"></script>
+```
+
+## Authors
+
+**Justin Winthers**
+
++ https://github.com/JustinWinthers
+
+
+## License
+
+Copyright 2014 Digital Advisors, LLC
+MIT
 
 ------------------------
 <img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot1.png" width="100%" >
