@@ -1,4 +1,5 @@
 .idea/
 .git/
+media/
 node_modules/
 tests/
