@@ -20,6 +20,8 @@ Simply embed it in your project like so:
 <script src="http://www.userkinect.com/userKinect.js?project=yourJiraProject&component=someJiraComponent&env=PROD&issuetype=yourIssueType"></script>
 ```
 
+Or download your own version and serve it on your internal network.
+
 ## Authors
 
 **Justin Winthers**
