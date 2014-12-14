@@ -16,32 +16,32 @@ tools to UserKinect.  UserKinect is written in pure JavaScript with an API layer
 
 
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot1.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot1.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot2.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot2.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot3.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot3.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot4.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot4.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot5.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot5.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot6.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot6.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot7.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot7.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot8.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot8.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot9.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot9.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot10.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot10.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot11.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot11.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot12.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot12.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot13.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot13.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot14.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot14.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot15.png" width="75%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot15.png" width="100%" >
