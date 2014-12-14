@@ -16,32 +16,32 @@ tools to UserKinect.  UserKinect is written in pure JavaScript with an API layer
 
 
 ------------------------
-<img src="/screenshots/screenshot-1.png" width="50%" >
+<img src="/screenshots/shot1.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-2.png" width="50%" >
+<img src="/screenshots/shot2.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-3.png" width="50%" >
+<img src="/screenshots/shot3.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-4.png" width="50%" >
+<img src="/screenshots/shot4.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-5.png" width="50%" >
+<img src="/screenshots/shot5.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-6.png" width="50%" >
+<img src="/screenshots/shot6.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-7.png" width="50%" >
+<img src="/screenshots/shot7.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-8.png" width="50%" >
+<img src="/screenshots/shot8.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-9.png" width="50%" >
+<img src="/screenshots/shot9.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-10.png" width="50%" >
+<img src="/screenshots/shot10.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-11.png" width="50%" >
+<img src="/screenshots/shot11.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-12.png" width="50%" >
+<img src="/screenshots/shot12.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-13.png" width="50%" >
+<img src="/screenshots/shot13.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-14.png" width="50%" >
+<img src="/screenshots/shot14.png" width="50%" >
 ------------------------
-<img src="/screenshots/screenshot-15.png" width="50%" >
+<img src="/screenshots/shot15.png" width="50%" >
