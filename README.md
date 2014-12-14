@@ -34,8 +34,6 @@ tools to UserKinect.  UserKinect is written in pure JavaScript with an API layer
 ------------------------
 <img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot9.png" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot10.png" width="100%" >
-------------------------
 <img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot11.png" width="100%" >
 ------------------------
 <img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot12.png" width="100%" >
