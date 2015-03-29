@@ -35,30 +35,30 @@ Copyright 2014 Digital Advisors, LLC
 MIT
 
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot1.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot1.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot2.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot2.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot3.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot3.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot4.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot4.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot5.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot5.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot6.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot6.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot7.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot7.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot8.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot8.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot9.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot9.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot11.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot11.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot12.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot12.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot13.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot13.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot14.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot14.jpg" width="100%" >
 ------------------------
-<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/shot15.png" width="100%" >
+<img src="https://s3-us-west-2.amazonaws.com/userkinect/screenshots/jpg/shot15.jpg" width="100%" >
